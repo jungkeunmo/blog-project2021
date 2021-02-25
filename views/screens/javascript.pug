@@ -1,0 +1,27 @@
+extends ../layouts/main.pug
+
+block content
+    .boardTitle
+        h2.boardTitle__head JAVASCRIPT
+    .boardSearch
+        input.boardSearch__search(type="text" placeholder="제목검색….")
+    .boardContents
+        div.boardContents__rsWrapper
+            //- BOARO-HEADER
+            ul.boardHeader
+                li.boardHeader__field 번호
+                li.boardHeader__field 제목
+                li.boardHeader__field 작성일
+                li.boardHeader__field 조회수 
+
+            each data in dataResult
+                ul.boardBody
+                    li.boardBody__field #{data.no}
+                    li.boardBody__field
+                        a(href=`/board/detail/${data._id}`) #{data.title}
+                    li.boardBody__field #{data.createdAt}
+                    li.boardBody__field #{data.hit}
+    
+    if devMode
+        a(href="/board/write/javascript")  
+            button.writeBtn 글 작성(개발자 모드) 

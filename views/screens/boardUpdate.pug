@@ -1,0 +1,11 @@
+extends ../layouts/main.pug
+
+block content
+    div.writeWrapper
+        //h1 게시글 수정하기
+        h2 #{type} 게시글 수정하기
+        form(action="/board/update" method="POST")
+            input(type="hidden" name="id" value=board._id)
+            input.writeWrapper__title(type="text" placeholder="제목을입력해주세요." name="title" value=board.title)
+            textarea.writeWrapper__desc(placeholder="내용을입력해주세요." name="desc") #{board.description}
+            button.writeWrapper__btn 수정하기

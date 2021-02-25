@@ -1,0 +1,171 @@
+.boardTitle {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardTitle .boardTitle__head {
+  font-size: 36px;
+  padding: 16px;
+  border-bottom:  1px solid thistle;
+}
+
+.boardSearch {
+  width: 100%;
+  height: 80px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardSearch .boardSearch__search { 
+  width: 400px;
+  padding: 5px 10px;
+  outline: none;
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.boardContents {
+  width: 100%;
+  padding: 40px 0px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardContents .boardContents__rsWrapper {
+  width: 1350px;
+  padding: 40px 0px;
+  
+}
+
+.boardHeader {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+}
+
+.boardHeader li:nth-child(1){
+  width: 60px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardHeader li:nth-child(2){
+  width: 890px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.boardHeader li:nth-child(3){
+  width: 250px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardHeader li:nth-child(4){
+  width: 150px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardBody {
+  width: 100%;
+  height: 35px;
+
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #777;
+}
+
+.boardBody li:nth-child(1){
+  width: 60px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardBody li:nth-child(2){
+  width: 890px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.boardBody li:nth-child(2):hover {
+  font-weight: 700;
+}
+
+.boardBody li:nth-child(3){
+  width: 250px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardBody li:nth-child(4){
+  width: 150px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.writeBtn {
+  width: 200px;
+  height: 25px;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  background-color: #F8EFBA;
+  color: #fff;
+
+  box-shadow: 2px 3.5px 3.5px #999;
+}

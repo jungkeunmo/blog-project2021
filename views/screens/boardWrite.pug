@@ -1,0 +1,10 @@
+extends ../layouts/main.pug
+
+block content
+    div.writeWrapper
+        h2 #{type} write page
+        form(action="/board/write" method="POST")
+            input.writeWrapper__title(type="text" placeholder="제목을입력해주세요." name="title")
+            textarea.writeWrapper__desc(placeholder="내용을입력해주세요." name="desc")
+            input(type="hidden" name="type" value=type )
+            button.writeWrapper__btn 등록하기

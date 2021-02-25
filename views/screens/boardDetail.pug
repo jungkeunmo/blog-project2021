@@ -1,0 +1,25 @@
+extends ../layouts/main.pug
+
+block content
+    .boardWrapper
+        section.boardWrapper__titleArea.ta
+            .ta__box
+            .ta__title #{postData.title}
+        section.boardWrapper__contentArea.ca
+            .ca__box
+            .ca__content #{postData.description}
+    .boardFooter
+        .boardButonArea
+            if devMode
+                form(action="/board/updateBoard", method="POST")
+                    input(type="hidden" name="id" value=postData._id)
+                    button.boardButtonArea__goList 수정하기
+                form(action="/board/deleteBoard" method="POST")
+                    input(type="hidden" name="id" value=postData._id)
+                    button.boardButtonArea__goList 삭제하기
+                button.boardButtonArea__goList 목록으로
+        
+        section.boardFooter__infoArea 
+             p #{postData.author}
+             p #{postData.createdAt}
+    
